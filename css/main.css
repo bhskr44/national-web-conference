@@ -688,7 +688,7 @@ hr {
 }
 
 .about-hero-section {
-  background-image: url(../images/about_bg_01.png);
+  background-image: url('../images/about_bg_01.png');
   background-size: 100%;
   background-color: #d3d3d3;
   padding-bottom: 2%;
