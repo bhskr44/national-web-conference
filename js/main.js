@@ -19,9 +19,9 @@ closeIcon.addEventListener('click', () => {
   primaryNavItem.classList.remove('nav-item');
 });
 
-//dynamic Page
+// dynamic Page
 
-let featuredSpeakers = [
+const featuredSpeakers = [
   {
     name: 'Ankit Faidia',
     designation: 'Etical Hacker',
@@ -67,28 +67,19 @@ let featuredSpeakers = [
 ];
 
 const speakerParentelement = document.querySelector('.all-speakers');
-for (let i = 0; i < featuredSpeakers.length; i++) {
-  speakerParentelement.innerHTML +=
-    `<div class="single-speaker">
+for (let i = 0; i < featuredSpeakers.length; i += 1) {
+  speakerParentelement.innerHTML += `<div class="single-speaker">
     <img
     class="speaker-photo"
-    src="` +
-    featuredSpeakers[i].photoUrl +
-    `"
+    src="${featuredSpeakers[i].photoUrl}"
     alt="Featured Speaker"
     />
-    <h3 class="speaker-name">` +
-    featuredSpeakers[i].name +
-    `</h3>
-    <h4 class="speaker-designation">` +
-    featuredSpeakers[i].designation +
-    `</h4>
+    <h3 class="speaker-name">${featuredSpeakers[i].name}</h3>
+    <h4 class="speaker-designation">${featuredSpeakers[i].designation}</h4>
     <div class="small-dash"></div>
     <p class="speaker-description">
     <br />
-    ` +
-    featuredSpeakers[i].description +
-    `
+    ${featuredSpeakers[i].description}
     </p>
     </div>`;
 }
