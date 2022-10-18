@@ -11,6 +11,34 @@ h4 {
   margin: 0;
   padding: 0;
 }
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #272a31;
+  color: #d3d3d3;
+  z-index: 5;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.close-icon {
+  float: right;
+  padding-right: 20px;
+  font-size: 45px;
+  -webkit-text-stroke: 6px #272a31;
+}
+
+
+.mobile-nav ul {
+ list-style-type: none;
+}
 
 .top-nav {
   height: 20px;
@@ -216,7 +244,7 @@ header .main-nav {
 .featured-speakers {
   padding: 8% 0 2% 0;
   background-color: white;
-  color: black;
+  color: #272a31;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -342,11 +370,29 @@ header .main-nav {
   align-items: center;
 }
 
+.hamburger-menu-icon{
+display: none;
+}
+
 @media (max-width: 768px) {
-  .main-nav ul {
+  .desktop-menu {
     display: none;
   }
 
+
+  .hamburger-menu-icon{
+    display: flex;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    padding-bottom:20%;
+    background:  transparent;
+    color:#272a31
+  }
+
+  .welcome-message{
+    margin-top:20%;
+  }
 
   .hello-text {
     font-size: 20px;
@@ -416,6 +462,11 @@ header .main-nav {
     gap: 20px;
     align-items: center;
   }
+
+  .mobile-nav a {
+    text-decoration: none;
+    color: #d3d3d3;
+  }
 }
 
 .hide {
@@ -425,7 +476,94 @@ header .main-nav {
 .small-dash {
   margin-top: 10px;
   width: 25px;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.455);
+  border-bottom: 1px solid #272a31;
   text-align: center;
   float: left;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+/* CSS for About Us page */
+.navigation{
+  display: flex;
+  justify-content: flex-end;
+}
+.navigation p {
+  margin: 0 5px 0 5px;
+  padding: 0;
+}
+
+.navigation .home {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 22px;
+  align-items: center;
+  font-weight: 300;
+  padding-right: 10%;
+  padding-top: 3%;
+}
+
+.navigation .home i, p {
+  margin-left: 10px;
+}
+
+.color-red {
+  color: #ec5242;
+}
+
+.about-hero-text .event {
+  text-align: center;
+  color: #ec5242;
+  background: #ec5242;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 55px;
+  padding: 5% 5% 0 5%;
+}
+
+.about-hero-text .dash {
+  text-align: center;
+  left: 50%;
+}
+
+.about-hero-section {
+  background-image: url('../images/about_bg_01.png');
+  background-size: cover;
+  background-color: #d3d3d3;
+}
+
+.about-hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero-section .about-description {
+  width: 45%;
+  padding: 5%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.logo-desciption {
+  padding: 8% 0;
+  background-color: white;
+  color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-desciption h2 {
+  font-weight: 300;
+  font-size: 32px;
 }
