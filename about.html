@@ -17,16 +17,24 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="icon" href="images/logo/fa-icon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main>
+    <main id="main">
       <header>
+        <div class="slidedown" id="slidedown"></div>
         <!-- Mobile Menu -->
         <div class="mobile-menu">
           <div class="hamburger-menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
+            <i id="hamburger-menu-icon" class="fa fa-bars fa-2x show-bars"></i>
           </div>
           <nav class="mobile-nav hide">
             <div class="logo-container">
@@ -35,9 +43,9 @@
               </div>
             </div>
             <ul>
+              <li class="nav-item"><a href="index.html">Home</a></li>
               <li class="nav-item"><a href="about.html">About</a></li>
               <li class="nav-item">Events</li>
-              <li class="nav-item">Registation</li>
               <li class="nav-item">Sponsers</li>
               <li class="theme-btn theme-btn-primary contact-us">
                 <a href="#">Contact Us</a>
@@ -62,9 +70,9 @@
               /></a>
             </div>
             <ul>
+              <li class="nav-item"><a href="index.html">Home</a></li>
               <li class="nav-item"><a href="about.html">About</a></li>
               <li class="nav-item">Events</li>
-              <li class="nav-item">Registation</li>
               <li class="nav-item">Sponsers</li>
               <li class="theme-btn theme-btn-primary conatct-us">
                 <a href="#">Contact Us</a>
@@ -76,13 +84,13 @@
 
       <section class="about-hero-section">
         <div class="navigation">
-          <div class="home color-red">
+          <div class="home color-theme-black">
             <i class="fa fa-home"></i><i class="fa fa-angle-right"></i>
             <p>About</p>
           </div>
         </div>
         <div class="about-hero-text">
-          <h2 class="event">National Web <br />Conference 2023</h2>
+          <h1 class="event">National Web <br />Conference 2023</h1>
           <div class="dash"></div>
           <p class="about-description">
             Believing in the value of sharing and openness, a joyful festival
@@ -92,8 +100,11 @@
           </p>
 
           <p class="about-info">
-            Please contact us for more info on
-            <a href="mailto:contact@nwc.org">contact@nwc.org</a>
+            Please contact us for more info on National Web Conference 2023
+            at<br />
+            <a class="no-decoration center bold" href="mailto:contact@nwc.org"
+              >contact@nwc.org</a
+            >
           </p>
         </div>
       </section>
@@ -140,7 +151,40 @@
         </div>
       </section>
 
-      <section class="footer bg-black">
+      <section class="partners">
+        <h2>Partners</h2>
+        <div class="dash"></div>
+        <div class="all-partners">
+          <ul>
+            <li>
+              <img
+                src="images/partners/google-india-logo-625800AE7B-seeklogo.com.png"
+                alt="Google India"
+              />
+            </li>
+
+            <li>
+              <img src="images/partners/aws.png" alt="AWS" />
+            </li>
+
+            <li>
+              <img
+                src="images/partners/Cloudflare_Logo.svg.png"
+                alt="CloudFlare"
+              />
+            </li>
+
+            <li>
+              <img
+                src="images/partners/Tata_Consultancy_Services_Logo.svg.png"
+                alt="TCS"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer">
         <img src="images/logo/logo_short.jpg" alt="CopyRight" />
         <div class="copyright-info">
           <p clas="copyright-to">

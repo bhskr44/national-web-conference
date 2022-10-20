@@ -18,3 +18,17 @@ closeIcon.addEventListener('click', () => {
   primaryNavItem.classList.add('theme-btn-primary');
   primaryNavItem.classList.remove('nav-item');
 });
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('slidedown').style.top = '0';
+    document.querySelector('.hamburger-menu-icon').style.color = 'white';
+  } else {
+    document.getElementById('slidedown').style.top = '-80px';
+    document.querySelector('.hamburger-menu-icon').style.color = 'black';
+  }
+}
+
+window.onscroll = () => {
+  scrollFunction();
+};
