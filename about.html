@@ -23,15 +23,18 @@
       type="text/css"
     />
 
+    <link rel="icon" href="images/logo/fa-icon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main>
+    <main id="main">
       <header>
+        <div class="slidedown" id="slidedown"></div>
         <!-- Mobile Menu -->
         <div class="mobile-menu">
           <div class="hamburger-menu-icon">
-            <i class="fa fa-bars fa-2x"></i>
+            <i id="hamburger-menu-icon" class="fa fa-bars fa-2x show-bars"></i>
           </div>
           <nav class="mobile-nav hide">
             <div class="logo-container">
@@ -42,6 +45,7 @@
             <ul>
               <li class="nav-item"><a href="index.html">Home</a></li>
               <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item">Events</li>
               <li class="nav-item">Sponsers</li>
               <li class="theme-btn theme-btn-primary contact-us">
                 <a href="#">Contact Us</a>
@@ -68,6 +72,7 @@
             <ul>
               <li class="nav-item"><a href="index.html">Home</a></li>
               <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item">Events</li>
               <li class="nav-item">Sponsers</li>
               <li class="theme-btn theme-btn-primary conatct-us">
                 <a href="#">Contact Us</a>
@@ -79,7 +84,7 @@
 
       <section class="about-hero-section">
         <div class="navigation">
-          <div class="home color-red">
+          <div class="home color-theme-black">
             <i class="fa fa-home"></i><i class="fa fa-angle-right"></i>
             <p>About</p>
           </div>
@@ -146,7 +151,40 @@
         </div>
       </section>
 
-      <section class="footer bg-black">
+      <section class="partners">
+        <h2>Partners</h2>
+        <div class="dash"></div>
+        <div class="all-partners">
+          <ul>
+            <li>
+              <img
+                src="images/partners/google-india-logo-625800AE7B-seeklogo.com.png"
+                alt="Google India"
+              />
+            </li>
+
+            <li>
+              <img src="images/partners/aws.png" alt="AWS" />
+            </li>
+
+            <li>
+              <img
+                src="images/partners/Cloudflare_Logo.svg.png"
+                alt="CloudFlare"
+              />
+            </li>
+
+            <li>
+              <img
+                src="images/partners/Tata_Consultancy_Services_Logo.svg.png"
+                alt="TCS"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer">
         <img src="images/logo/logo_short.jpg" alt="CopyRight" />
         <div class="copyright-info">
           <p clas="copyright-to">
