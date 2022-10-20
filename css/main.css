@@ -223,6 +223,10 @@ header .main-nav {
   padding: 20px;
 }
 
+.single-program:hover{
+  border: 1px solid white;
+}
+
 .single-program h2 {
   text-align: center;
 }
