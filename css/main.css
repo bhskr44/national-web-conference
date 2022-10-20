@@ -450,9 +450,11 @@ header .main-nav {
 
 .about-hero-section {
   background-image: url('../images/about_bg_01.png');
-  background-size: cover;
-  background-color: #d3d3d3;
+  background-size: 100%;
+  background-color: #f7f7f7;
   padding-bottom: 2%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-hero-text {
@@ -466,8 +468,9 @@ header .main-nav {
 .about-hero-section .about-description {
   width: 75%;
   padding: 5%;
-  background-color: #f5f5f5;
+  background-color: white;
   text-align: center;
+  border:1px solid var(--theme-white);
 }
 
 .logo-desciption {
@@ -712,4 +715,26 @@ hr {
   top: -50px; 
   width: 100%;
   transition: top 0.3s;
+}
+
+.no-decoration{
+  text-decoration: none;
+  color: var(--theme-black);
+}
+
+.center {
+  text-align: center;
+}
+
+.about-info a {
+  font-size: 20px;
+    font-weight: 600;
+}
+
+.about-info {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
 }
