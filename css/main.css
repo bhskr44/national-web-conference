@@ -727,11 +727,6 @@ hr {
     z-index: 50;
   }
 
-  .all-partners ul {
-    display: flex;
-    flex-direction: row;
-  }
-
   .all-partners ul li {
     width: 150px;
     height: 50px;
