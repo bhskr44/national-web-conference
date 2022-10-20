@@ -146,6 +146,7 @@ header .main-nav {
 }
 
 .event {
+  font-family: 'COCOGOOSE', sans-serif;
   font-size: 70px;
   font-weight: 900;
   background-image: url('../images/text_overlay.png');
@@ -575,7 +576,7 @@ hr {
   .hamburger-menu-icon {
     display: flex;
     position: fixed;
-    top: 10%;
+    top: 3%;
     left: 10%;
     padding-bottom: 20%;
     background: transparent;
@@ -588,6 +589,7 @@ hr {
 
   .hello-text {
     font-size: 20px;
+    margin-top: 40px;
   }
 
   .event {
@@ -701,4 +703,13 @@ hr {
     padding: 60px 20px;
     margin: 10px;
   }
+}
+
+
+.slidedown {
+  background-color: #333;
+  position: fixed; 
+  top: -50px; 
+  width: 100%;
+  transition: top 0.3s;
 }
